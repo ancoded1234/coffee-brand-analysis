@@ -37,6 +37,6 @@
   ],
   "source_count": 32,
   "secret_scan": "passed; values never printed",
-  "packaged_file_count": 170,
-  "public_deployment": "not requested; local artifacts only"
+  "packaged_file_count": 187,
+  "public_deployment": "https://ancoded1234.github.io/coffee-brand-analysis/ (GitHub Pages)"
 }

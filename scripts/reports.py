@@ -145,4 +145,8 @@ uv pip install --python .venv/Scripts/python.exe -r requirements.txt
 공개 배포는 이번 커피 과제에서 요청되지 않아 GitHub 업로드·공개 URL을 만들지 않았다. 로컬 확인: `python -m http.server 8000 --directory presentation`. API 키·인증 파일·가상환경은 제출 ZIP에 포함하지 않는다.
 '''
 (R/'README.md').write_text(readme,encoding='utf-8')
+if (R/'docs/index.html').exists():
+    # Keep publication details when regenerating the research report after deployment.
+    import runpy
+    runpy.run_path(str(R/'scripts/prepare_pages.py'),run_name='__main__')
 print('Corrected reports, notes provenance, README and video validation saved')

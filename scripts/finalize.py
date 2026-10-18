@@ -35,7 +35,7 @@ files=[]
 for f in R.rglob('*'):
     if not f.is_file():continue
     rel=f.relative_to(R);parts=set(rel.parts)
-    if parts & {'.venv','__pycache__','manim'} or f.name.startswith(('.env','~$')) or f.suffix=='.zip' or f.name in ['submission_manifest.json','final_validation.json']:continue
+    if parts & {'.git','.venv','__pycache__','manim'} or f.name.startswith(('.env','~$')) or f.suffix=='.zip' or f.name in ['submission_manifest.json','final_validation.json']:continue
     if 'qa' in parts and f.suffix not in ['.json'] and f.name!='contact_sheet.jpg':continue
     if str(rel).startswith('data\\raw') and 'robots' not in parts:continue
     files.append(f)
@@ -50,7 +50,7 @@ for f in files:
                 raw=z.read(n)
                 if any(s.encode() in raw for s in secrets):hits.append(f.name+':embedded file')
 assert not hits,'Secret found in selected artifacts (content suppressed)'
-report={'data_invariants':'passed','pdf_pages':13,'pptx_slides':13,'native_charts':2,'native_animation_effects':office['animation_effects'],'chart_wipes':len(office['native_chart_animation']),'manim_videos':videos,'source_count':len(sources),'secret_scan':'passed; values never printed','packaged_file_count':len(files),'public_deployment':'not requested; local artifacts only'}
+report={'data_invariants':'passed','pdf_pages':13,'pptx_slides':13,'native_charts':2,'native_animation_effects':office['animation_effects'],'chart_wipes':len(office['native_chart_animation']),'manim_videos':videos,'source_count':len(sources),'secret_scan':'passed; values never printed','packaged_file_count':len(files),'public_deployment':'https://ancoded1234.github.io/coffee-brand-analysis/ (GitHub Pages)' if (R/'docs/index.html').exists() else 'local artifacts only'}
 (Q/'final_validation.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
 files.append(Q/'final_validation.json')
 manifest=[dict(path=f.relative_to(R).as_posix(),bytes=f.stat().st_size,sha256=hashlib.sha256(f.read_bytes()).hexdigest()) for f in files]

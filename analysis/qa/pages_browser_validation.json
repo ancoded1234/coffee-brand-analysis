@@ -1,0 +1,158 @@
+{
+  "desktop": [
+    {
+      "slide": 1,
+      "overflow": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "slide": 2,
+      "overflow": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "slide": 3,
+      "overflow": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "slide": 4,
+      "overflow": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "slide": 5,
+      "overflow": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "slide": 6,
+      "overflow": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "slide": 7,
+      "overflow": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "slide": 8,
+      "overflow": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "slide": 9,
+      "overflow": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "slide": 10,
+      "overflow": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "slide": 11,
+      "overflow": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "slide": 12,
+      "overflow": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "slide": 13,
+      "overflow": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "mobile": [
+    {
+      "slide": 1,
+      "page_horizontal_overflow": 0
+    },
+    {
+      "slide": 2,
+      "page_horizontal_overflow": 0
+    },
+    {
+      "slide": 3,
+      "page_horizontal_overflow": 0
+    },
+    {
+      "slide": 4,
+      "page_horizontal_overflow": 0
+    },
+    {
+      "slide": 5,
+      "page_horizontal_overflow": 0
+    },
+    {
+      "slide": 6,
+      "page_horizontal_overflow": 0
+    },
+    {
+      "slide": 7,
+      "page_horizontal_overflow": 0
+    },
+    {
+      "slide": 8,
+      "page_horizontal_overflow": 0
+    },
+    {
+      "slide": 9,
+      "page_horizontal_overflow": 0
+    },
+    {
+      "slide": 10,
+      "page_horizontal_overflow": 0
+    },
+    {
+      "slide": 11,
+      "page_horizontal_overflow": 0
+    },
+    {
+      "slide": 12,
+      "page_horizontal_overflow": 0
+    },
+    {
+      "slide": 13,
+      "page_horizontal_overflow": 0
+    }
+  ],
+  "errors": [],
+  "url": "https://ancoded1234.github.io/coffee-brand-analysis/",
+  "video": {
+    "ready": 4,
+    "duration": 6.5,
+    "width": 1280,
+    "error": null
+  },
+  "fullscreen": true
+}
