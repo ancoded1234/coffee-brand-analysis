@@ -1,0 +1,15 @@
+.env
+.env.*
+.venv/
+__pycache__/
+data/firecrawl/*_full.json
+*.tmp
+~$*
+data/firecrawl/
+data/raw/
+presentation/assets/manim/
+analysis/qa/*.png
+analysis/qa/*.jpg
+analysis/qa/*.log
+*.zip
+submission_manifest.json

@@ -1,0 +1,49 @@
+﻿file,url,http,content_valid,reason,collected_at
+compose_2026_reaudit.json,https://nyfknba.com/blog/compose-coffee-interview-2026/,200,True,본문 별도 검토,2026-10-18T10:31:35.541329+00:00
+compose_beans.json,https://composecoffee.com/bitterholic,403,False,HTTP error,2026-10-18T09:55:19.855259+00:00
+compose_bsca_news.json,https://v.daum.net/v/ztIZsyFO7l,200,True,본문 별도 검토,2026-10-18T10:01:34.933854+00:00
+compose_exhibition.json,https://kor.cafeshow.com/kor/cafeshow/result2023_comp_view.asp?idx=4239,200,True,본문 별도 검토,2026-10-18T09:58:01.718011+00:00
+compose_external.json,https://www.the-pr.co.kr/news/articleView.html?idxno=52713,200,True,본문 별도 검토,2026-10-18T09:57:49.635927+00:00
+compose_home.json,https://composecoffee.com,403,False,HTTP error,2026-10-18T09:52:17.435352+00:00
+compose_price.json,https://www.hankyung.com/article/202502039855g,200,True,본문 별도 검토,2026-10-18T09:57:15.150067+00:00
+compose_roast.json,https://composecoffee.com/news/203476,403,False,HTTP error,2026-10-18T09:55:29.862971+00:00
+paik_beans.json,https://paikdabang.com/about/coffee_story/,200,True,본문 별도 검토,2026-10-18T09:51:47.664669+00:00
+paik_farm_2026_reaudit.json,https://v.daum.net/v/20260601080101122,200,True,본문 별도 검토,2026-10-18T10:32:07.527834+00:00
+paik_official_20_reaudit.json,https://start.theborn.co.kr/m/paikdabang,200,True,본문 별도 검토,2026-10-18T10:32:33.830745+00:00
+paik_price.json,https://www.newspim.com/news/view/20250515000251,200,True,본문 별도 검토,2026-10-18T09:56:05.081989+00:00
+pascucci_beans.json,https://www.pascucci.co.kr/company/intro_korea.asp,200,True,본문 별도 검토,2026-10-18T09:52:42.534658+00:00
+pascucci_hot_price_check.json,https://app.passorder.co.kr/normal/fcd3b46a-a2db-4352-b431-4a92ee51e138/menus,404,False,HTTP error,2026-10-18T10:14:53.786758+00:00
+pascucci_hot_tabling.json,https://www.tabling.co.kr/place/677cc82b66de5f0698764007,200,True,본문 별도 검토,2026-10-18T10:15:27.857954+00:00
+pascucci_origin_reaudit.json,https://www.happyorder.co.kr/nutritional?type=PCpas,200,False,soft 404,2026-10-18T10:31:22.959270+00:00
+pascucci_price.json,https://www.etoday.co.kr/news/view/2444699,200,True,본문 별도 검토,2026-10-18T09:55:53.342935+00:00
+paul_hold_price_reaudit.json,https://m.newspim.com/news/view/20250116001018,200,True,본문 별도 검토,2026-10-18T10:36:45.808333+00:00
+paul_hot_reaudit.json,https://www.baristapaulbassett.co.kr/menu/View.pb?cid1=A&cid2=B&dpid=PB179548,200,True,본문 별도 검토,2026-10-18T10:36:28.258541+00:00
+paul_menu_list_reaudit.json,https://www.baristapaulbassett.co.kr/menu/List.pb?cid1=A&cid2=B,200,True,본문 별도 검토,2026-10-18T10:36:29.771855+00:00
+paul_price_reaudit.json,https://www.11st.co.kr/products/7996618616,200,True,본문 별도 검토,2026-10-18T10:36:45.583067+00:00
+paul_principles_reaudit.json,https://www.baristapaulbassett.co.kr/aboutus/brand/Principles.pb,200,True,본문 별도 검토,2026-10-18T10:36:17.838932+00:00
+paul_signature_reaudit.json,https://www.baristapaulbassett.co.kr/contactus/coffeebeans/Signature.pb,200,True,본문 별도 검토,2026-10-18T10:36:04.353929+00:00
+specialty_ratios_2026_reaudit.json,https://v.daum.net/v/3zKNh7Rfl4,200,True,본문 별도 검토,2026-10-18T10:32:22.138705+00:00
+starbucks_americano.json,https://www.starbucks.co.kr/menu/product_view.do?product_cd=94,200,True,본문 별도 검토,2026-10-18T09:56:45.146088+00:00
+starbucks_arabica.json,https://www.starbucks.co.kr/coffee/story.do?PACKAGE=02,200,True,본문 별도 검토,2026-10-18T09:56:30.808748+00:00
+starbucks_beans.json,https://www.starbucks.co.kr/coffee/product_list.do,200,True,본문 별도 검토,2026-10-18T09:54:31.541658+00:00
+starbucks_espresso.json,https://www.starbucks.co.kr/coffee/product_view.do?product_cd=11017024,200,False,soft 404,2026-10-18T09:59:04.486813+00:00
+starbucks_espresso_verified.json,https://www.starbucks.co.kr/coffee/product_view.do?PRODUCT_CD=11017024,200,True,본문 별도 검토,2026-10-18T10:00:10.160617+00:00
+starbucks_ethics.json,https://www.starbucks.co.kr/responsibility/ethically_sourcing.do,200,True,본문 별도 검토,2026-10-18T09:52:58.050499+00:00
+starbucks_global.json,https://www.starbucksathome.com/kr/story/arabica-coffee,200,True,본문 별도 검토,2026-10-18T09:58:11.559224+00:00
+starbucks_hot_verified.json,https://www.starbucks.co.kr/menu/drink_view.do?product_cd=94,200,True,본문 별도 검토,2026-10-18T10:00:25.853881+00:00
+starbucks_price.json,https://www.newsis.com/view/NISX20250120_0003038755?pc_view=1,200,True,본문 별도 검토,2026-10-18T09:55:42.362236+00:00
+ten_beans.json,https://www.tenpercentcoffee.com/sub/sub12.php,200,True,본문 별도 검토,2026-10-18T09:53:55.472412+00:00
+ten_current_menu.json,https://app.passorder.co.kr/normal/279ece8e-612f-452c-8da2-d5422c4525fc/menus,200,True,본문 별도 검토,2026-10-18T09:58:37.903409+00:00
+ten_home.json,https://www.tenpercentcoffee.com,200,True,본문 별도 검토,2026-10-18T09:52:08.571343+00:00
+ten_hot_store.json,https://www.diningcode.com/profile.php?rid=LTuiY2XHcYsR,200,True,본문 별도 검토,2026-10-18T09:58:49.955045+00:00
+ten_menu_external.json,https://blog.naver.com/PostView.nhn?blogId=yumichelin&logNo=223706146952&redirect=Dlog&widgetTypeCall=true,200,True,본문 별도 검토,2026-10-18T09:58:24.954927+00:00
+ten_price.json,https://app.passorder.co.kr/normal/73961a8c-4ace-4cf0-aee4-4a4decbfb234,200,True,본문 별도 검토,2026-10-18T09:57:28.632168+00:00
+ten_robots.json,https://www.tenpercentcoffee.com/robots.txt,200,True,본문 별도 검토,2026-10-18T09:59:26.655507+00:00
+ten_story.json,https://www.tenpercentcoffee.com/sub/sub11.php,200,True,본문 별도 검토,2026-10-18T09:53:44.143010+00:00
+twosome_beans.json,https://www.twosome.co.kr/mn/coffeeStory.do,200,True,본문 별도 검토,2026-10-18T09:54:15.478399+00:00
+twosome_home.json,https://www.twosome.co.kr,200,True,본문 별도 검토,2026-10-18T09:52:29.727134+00:00
+twosome_hot_price_check.json,https://www.11st.co.kr/products/8432247303,200,True,본문 별도 검토,2026-10-18T10:14:42.513884+00:00
+twosome_nutrition.json,https://www.twosome.co.kr/co/annoDetail.do?annoSeqNo=1433,200,True,본문 별도 검토,2026-10-18T09:56:15.632932+00:00
+twosome_price.json,https://www.hankyung.com/article/2025032451511,200,True,본문 별도 검토,2026-10-18T09:57:00.392021+00:00
+twosome_roast.json,https://www.twosome.co.kr/br/roastingPlant.do,200,True,본문 별도 검토,2026-10-18T09:54:05.321277+00:00
+twosome_robots.json,https://www.twosome.co.kr/robots.txt,200,True,본문 별도 검토,2026-10-18T09:59:13.957170+00:00

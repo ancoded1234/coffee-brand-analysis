@@ -1,0 +1,9 @@
+﻿관측ID,브랜드명,메뉴,HOT_ICE,기본가격,사이즈,용량_mL,샷수,원두투입량_g,매장위치,확인일,적용기준일,출처ID,출처URL,검증상태,분석포함,비고
+P01,스타벅스,아메리카노,HOT,4700,Tall,355.0,,,일반 매장 가격 보도(특수매장 제외),2026-10-18,2025-01-24,S04|S05,https://www.newsis.com/view/NISX20250120_0003038755?pc_view=1 | https://www.starbucks.co.kr/menu/drink_view.do?product_cd=94,reported,True,동일시점 영수증 조사 아님; 스타벅스 Tall은 최소 판매 Short와 다름
+P02,투썸플레이스,아메리카노,HOT,4700,Regular,,,,일반 매장 가격 보도; HOT 교환권 표시가 보조 확인,2026-10-18,2025-03-26,S08|S22,https://www.hankyung.com/article/2025032451511 | https://www.11st.co.kr/products/8432247303,reported,True,자료 시점·매장 범위가 달라 최신 전국 동일가 보장 안 됨
+P03,폴 바셋,아메리카노,HOT,4700,Standard,360.0,,,일반 Standard 교환권 표시가와 공식 HOT 메뉴 연결; 실결제 아님,2026-10-18,적용일 미표기; 2025-01 동결 보도,S28|S30|S31|S32,https://www.baristapaulbassett.co.kr/contactus/coffeebeans/Signature.pb | https://www.baristapaulbassett.co.kr/menu/View.pb?cid1=A&cid2=B&dpid=PB179548 | https://www.11st.co.kr/products/7996618616 | https://m.newspim.com/news/view/20250116001018,reported,True,자료 시점·매장 범위가 달라 최신 전국 동일가 보장 안 됨
+P04,빽다방,아메리카노,HOT,1700,기본,,,,일반 매장 가격 보도(배달 제외),2026-10-18,2025-05-22,S12,https://www.newspim.com/news/view/20250515000251,reported,True,자료 시점·매장 범위가 달라 최신 전국 동일가 보장 안 됨
+P05,텐퍼센트커피,아메리카노,HOT,2500,Regular,,,,"울산 중구 종가로 406-21, 울산비즈파크점 메뉴 재게시",2026-10-18,적용일 미확인,S14,https://www.diningcode.com/profile.php?rid=LTuiY2XHcYsR,reported,True,자료 시점·매장 범위가 달라 최신 전국 동일가 보장 안 됨
+P06,컴포즈커피,아메리카노,HOT,1500,기본,,,,일반 매장 HOT 동결 보도,2026-10-18,2025-02-13,S17,https://www.hankyung.com/article/202502039855g,reported,True,자료 시점·매장 범위가 달라 최신 전국 동일가 보장 안 됨
+P07,텐퍼센트커피,아메리카노,온도 미확인,2500,기본,,,,은평구청점,2026-10-18,미확인,S15,https://app.passorder.co.kr/normal/73961a8c-4ace-4cf0-aee4-4a4decbfb234,verified,False,온도 미확인으로 HOT 비교 제외; 100원 이벤트가 아닌 일반 메뉴값
+P08,텐퍼센트커피,아메리카노,온도 미확인,2000,기본,,,,정관제일점,2026-10-18,미확인,S16,https://app.passorder.co.kr/normal/279ece8e-612f-452c-8da2-d5422c4525fc/menus,verified,False,온도 미확인으로 HOT 비교 제외; 100원 이벤트가 아닌 일반 메뉴값

@@ -1,0 +1,4 @@
+def specialty_bars():
+    d=pd.read_csv(R/'data/specialty_components.csv')
+    return '<div class="specialty-chart">'+''.join(f'<article class="reveal"><b>{e(r.브랜드명)}</b><div class="component-track"><div class="bar" style="width:{r.스페셜티구성분_pct}%"></div></div><p><strong>{r.스페셜티구성분_pct}%</strong> · {e(r.근거형태)}</p></article>' for r in d.itertuples())+'<p class="component-note">0–100% 동일 축. 다른 4개 브랜드는 함량 근거 미확보로 제외(0% 아님).<br>국가별 전체 배합비·아라비카 비율·맛 점수와 다르다.</p></div>'
+

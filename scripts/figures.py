@@ -1,0 +1,30 @@
+from pathlib import Path
+import json
+import pandas as pd,numpy as np,seaborn as sns,matplotlib.pyplot as plt
+R=Path(__file__).resolve().parents[1];A=R/'analysis/figures';A.mkdir(parents=True,exist_ok=True)
+plt.rcParams.update({'font.family':'Malgun Gothic','axes.unicode_minus':False,'figure.facecolor':'#F4EFE6','axes.facecolor':'#F4EFE6','text.color':'#30231D','axes.labelcolor':'#30231D','xtick.color':'#65564B','ytick.color':'#65564B','savefig.facecolor':'#F4EFE6','font.size':12})
+c=pd.read_csv(R/'data/comparison.csv');names=c['브랜드명'].tolist();colors=['#754B36']*3+['#63765D']*3
+def save(name):plt.savefig(A/f'{name}.png',dpi=180,bbox_inches='tight');plt.savefig(A/f'{name}.svg',bbox_inches='tight');plt.close()
+fig,ax=plt.subplots(figsize=(10,5.2));sns.barplot(data=c,x='기본가격',y='브랜드명',hue='브랜드명',palette=colors,legend=False,ax=ax)
+for i,v in enumerate(c['기본가격']):ax.text(v+80,i,f'{v:,}원',va='center',fontweight='bold')
+ax.set(xlim=(0,5600),xlabel='공개 HOT 가격 관측치(원)',ylabel='',title='같은 HOT 아메리카노도 자료상 최대 3.13배 차이');sns.despine(left=True);fig.text(.12,-.02,'S04·S08·S31·S12·S14·S17 | 적용일 상이. 텐퍼센트: 울산비즈파크점. 전국 동시점 가격 조사 아님.',fontsize=9);save('01_prices')
+matrix=np.array([[1,0,1,1,0,0],[0,0,1,1,0,0],[0,0,1,0,0,0],[0,0,1,0,0,0],[0,0,1,1,0,0],[0,0,0,0,0,0]])
+cols=['품종 비율','국가별 비율','산지/지역 문구','매장 블렌드 배전','독립 관능점수','투입량(g)']
+pd.DataFrame(matrix,index=names,columns=cols).to_csv(R/'data/disclosure_matrix.csv',encoding='utf-8-sig')
+fig,ax=plt.subplots(figsize=(11,4.7));sns.heatmap(matrix,annot=np.where(matrix==1,'확인','미확인'),fmt='',cmap=sns.color_palette(['#E8DFD1','#9EAE92']),cbar=False,linewidths=7,linecolor='#F4EFE6',xticklabels=cols,yticklabels=names,ax=ax);ax.tick_params(axis='both',length=0);ax.set_title('공식 자료에서 확인한 문구의 범위 — 품질 점수가 아니다',pad=18);plt.xticks(rotation=15);plt.yticks(rotation=0);fig.text(.12,-.03,'S01–S03·S06–S07·S09·S11·S13 | 산지 표기는 정확성 독립 검증과 다름. 컴포즈 외부 자료는 별도 reported.',fontsize=9);save('02_disclosure')
+fig,ax=plt.subplots(figsize=(10,4.8));ax.barh(np.arange(6),[100,np.nan,np.nan,np.nan,np.nan,np.nan],color='#754B36',height=.5)
+for i in range(1,6):ax.barh(i,100,facecolor='none',edgecolor='#BAAD9B',hatch='///',height=.5);ax.text(50,i,'미공개 / 적용 범위 미확인',ha='center',va='center',bbox={'facecolor':'#F4EFE6','edgecolor':'none','pad':3})
+ax.text(50,0,'아라비카 100%',ha='center',va='center',color='white');ax.set_yticks(range(6),names);ax.invert_yaxis();ax.set(xlabel='실제 확인된 품종 비율(%)',xlim=(0,100),title='비율 확인 1/6 — 미확인은 0%가 아니다');sns.despine(left=True);fig.text(.12,-.03,'S01·S06·S13·S24–S30 | 품종 비율과 스페셜티 구성 함량은 다른 지표.',fontsize=9);save('03_species')
+fig,ax=plt.subplots(figsize=(10,4.7));y=[1,1,0,0,0,0];sns.scatterplot(x=c['기본가격'],y=y,hue=['주장 미확인']*2+['브랜드 주장','브랜드 주장','브랜드 주장','외부 보도'],style=['주장 미확인']*2+['브랜드 주장','브랜드 주장','브랜드 주장','외부 보도'],s=180,ax=ax,palette={'주장 미확인':'#754B36','브랜드 주장':'#63765D','외부 보도':'#B88E5B'})
+for i,b in enumerate(names):ax.annotate(b,(c.iloc[i]['기본가격'],y[i]),xytext=(0,(i-1)*19+18 if i<3 else 17),textcoords='offset points',ha='center',fontsize=11)
+ax.set(ylim=(-.5,1.8),xlim=(1000,5400),xlabel='HOT 가격 관측치(원)',ylabel='',yticks=[0,1],yticklabels=['스페셜티 주장/보도 있음','이번 조사에서 주장 미확인'],title='스페셜티 사용은 폴 바셋·가성비 그룹에서 주장·보도');ax.legend(loc='upper left',frameon=False);sns.despine(left=True);fig.text(.12,-.03,'S01–S03·S06–S07·S13·S24–S30 | 미확인 ≠ 미사용. y축은 품질 등급이 아니다.',fontsize=9);save('04_claims_price')
+fig,ax=plt.subplots(figsize=(9,4.3));vals=c.groupby('그룹',sort=False)['기본가격'].mean();sns.barplot(x=vals.values,y=['A 일반 프랜차이즈','B 가성비 포지셔닝'],hue=['A','B'],palette=['#754B36','#63765D'],legend=False,ax=ax)
+for i,v in enumerate(vals):ax.text(v+80,i,f'{v:,.0f}원',va='center',fontweight='bold')
+ax.set(xlim=(0,5600),xlabel='선정한 공개 관측값의 단순 평균(원)',ylabel='',title='관측값 평균: 4,700원 vs 1,900원');sns.despine(left=True);fig.text(.12,-.03,'각 그룹 n=3. 서로 다른 적용일·매장·컵 크기. 시장 평균 또는 원두 품질의 차이를 나타내지 않음.',fontsize=9);save('05_group_mean')
+d=pd.read_csv(R/'data/specialty_components.csv')
+fig,ax=plt.subplots(figsize=(10,4.7))
+sns.barplot(data=d,x='스페셜티구성분_pct',y='브랜드명',hue='브랜드명',palette=['#63765D','#B88E5B'],legend=False,ax=ax)
+for i,r in d.iterrows():ax.text(r['스페셜티구성분_pct']+2,i,f"{r['스페셜티구성분_pct']}% / {'공식 안내' if i==0 else '취재 보도'}",va='center',fontsize=13,fontweight='bold')
+ax.set(xlim=(0,100),xlabel='공개·보도된 스페셜티 구성 원두 함량(%)',ylabel='',title='구성 함량을 확인한 2개 브랜드 — 품질 순위가 아니다')
+sns.despine(left=True);fig.text(.12,-.04,'S24·S26 | 다른 4개 브랜드의 함량은 미확보(0% 아님). 컴포즈 82점은 구성 원두 보도값·평가표 미확보.',fontsize=9);save('06_specialty_share')
+print('6 charts + disclosure CSV generated')

@@ -1,0 +1,30 @@
+[
+  {
+    "file": "DisclosureGap.mp4",
+    "width": 1280,
+    "height": 720,
+    "frames": 162,
+    "duration_seconds": 6.75
+  },
+  {
+    "file": "EvidenceGap.mp4",
+    "width": 1280,
+    "height": 720,
+    "frames": 152,
+    "duration_seconds": 6.33
+  },
+  {
+    "file": "PriceComparison.mp4",
+    "width": 1280,
+    "height": 720,
+    "frames": 156,
+    "duration_seconds": 6.5
+  },
+  {
+    "file": "ValueChain.mp4",
+    "width": 1280,
+    "height": 720,
+    "frames": 143,
+    "duration_seconds": 5.96
+  }
+]

@@ -1,0 +1,66 @@
+{
+  "opened_by": "Microsoft PowerPoint COM",
+  "slides": 13,
+  "native_charts": [
+    {
+      "slide": 5,
+      "categories": [
+        "스타벅스",
+        "투썸플레이스",
+        "폴 바셋",
+        "빽다방",
+        "텐퍼센트커피",
+        "컴포즈커피"
+      ],
+      "values": [
+        4700.0,
+        4700.0,
+        4700.0,
+        1700.0,
+        2500.0,
+        1500.0
+      ]
+    },
+    {
+      "slide": 5,
+      "categories": [
+        "A 평균",
+        "B 평균"
+      ],
+      "values": [
+        4700.0,
+        1900.0
+      ]
+    }
+  ],
+  "animation_effects": 175,
+  "native_chart_animation": [
+    {
+      "slide": 5,
+      "by": "whole chart wipe (modern Office chart)",
+      "success": true
+    },
+    {
+      "slide": 5,
+      "by": "whole chart wipe (modern Office chart)",
+      "success": true
+    }
+  ],
+  "exported": [
+    "slide_01.png",
+    "slide_02.png",
+    "slide_03.png",
+    "slide_04.png",
+    "slide_05.png",
+    "slide_06.png",
+    "slide_07.png",
+    "slide_08.png",
+    "slide_09.png",
+    "slide_10.png",
+    "slide_11.png",
+    "slide_12.png",
+    "slide_13.png"
+  ],
+  "reopened_slides": 13,
+  "shape_bounds_violations": []
+}

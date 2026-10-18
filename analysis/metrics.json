@@ -1,0 +1,18 @@
+{
+  "collected": "2026-10-18",
+  "brands": 6,
+  "source_count": 32,
+  "price_observations": 8,
+  "hot_observations": 6,
+  "maximum": 4700,
+  "minimum": 1500,
+  "gap": 3200,
+  "max_min_ratio": 3.1333333333333333,
+  "group_a_mean": 4700.0,
+  "group_b_mean": 1900.0,
+  "breed_ratio_confirmed": 1,
+  "origin_ratio_confirmed": 0,
+  "independent_sensory_scores_obtained": 0,
+  "volume_confirmed": 2,
+  "price_basis": "서로 다른 적용일의 공개 HOT 가격 관측치. 텐퍼센트는 특정 매장 재게시값. 전국 동시점 시장 평균 아님."
+}

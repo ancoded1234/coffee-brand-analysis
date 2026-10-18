@@ -1,0 +1,42 @@
+{
+  "data_invariants": "passed",
+  "pdf_pages": 13,
+  "pptx_slides": 13,
+  "native_charts": 2,
+  "native_animation_effects": 175,
+  "chart_wipes": 2,
+  "manim_videos": [
+    {
+      "file": "DisclosureGap.mp4",
+      "width": 1280,
+      "height": 720,
+      "frames": 162,
+      "duration_seconds": 6.75
+    },
+    {
+      "file": "EvidenceGap.mp4",
+      "width": 1280,
+      "height": 720,
+      "frames": 152,
+      "duration_seconds": 6.33
+    },
+    {
+      "file": "PriceComparison.mp4",
+      "width": 1280,
+      "height": 720,
+      "frames": 156,
+      "duration_seconds": 6.5
+    },
+    {
+      "file": "ValueChain.mp4",
+      "width": 1280,
+      "height": 720,
+      "frames": 143,
+      "duration_seconds": 5.96
+    }
+  ],
+  "source_count": 32,
+  "secret_scan": "passed; values never printed",
+  "packaged_file_count": 170,
+  "public_deployment": "not requested; local artifacts only"
+}
